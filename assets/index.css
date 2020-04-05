@@ -1,0 +1,47 @@
+html, body{
+    margin: 0;
+}
+
+.container{
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    border: .3vw solid black;
+    margin: 3vh 25vw;
+}
+
+.ball{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-name: rolling-ball;
+    animation-direction: initial;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes rolling-ball{
+    0%{
+        background-color: red;
+        margin-left: 0vw;
+        margin-top: 0;
+    }
+    25%{
+        background-color: yellow;
+        margin-left: 45vw;
+        margin-top: 0;
+    }
+    50%{
+        background-color: green;
+        margin-left: 45vw;
+        margin-top: 80vh;
+
+    }
+    75%{
+        background-color: blue;
+        margin-left: 0vw;
+        margin-top: 80vh;
+    }
+}
